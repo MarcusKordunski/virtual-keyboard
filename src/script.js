@@ -221,7 +221,11 @@ const createEnKeys = () => {
   rightCtrl.style.flexBasis = '10%';
   rightCtrl.style.maxWidth = '100%'; // right ctrl size
 
-  keyArr[57].textContent = localStorage.getItem('lang');
+  if (localStorage.lang) {
+    keyArr[57].textContent = localStorage.getItem('lang');
+  } else {
+    keyArr[57].textContent = 'En';
+  }
 
   if (keyArr[57].textContent === 'Ru') {
     for (let i = 0; i < keyArr.length; i += 1) {
