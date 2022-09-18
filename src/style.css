@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	width: 1000px;
+	height: 520px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.textarea {
+	width: 960px;
+	height: 170px;
+	resize: none;
+	font-size: 18px;
+}
+
+.keyboard-container {
+	width: 960px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.row {
+	height: 60px;
+	width: 950px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.keyboard-key {
+	height: 60px;
+	border-radius: 6px;
+	font-size: 17px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	color: #444;
+	background-color: #f5f5f5;
+	transition: 0.3s;
+}
+
+.user-info-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 1000px;
+	font-size: 22px;
+	color: #444;
+}
